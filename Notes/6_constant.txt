@@ -1,0 +1,27 @@
+Constants
+
+- variable whose value cannot be modified after intialised
+Format:
+const <constant_name> <datatype> = <value>
+
+<datatype> --> optional
+
+Untyped constant --> <datatype> not provided during initialisation 
+
+Typed constant --> <datatype> provided during initialisation 
+
+
+Examples:
+
+Untyped:
+-> const age = 29
+-> const name, age = "Vaibhav", 29
+
+
+Typed:
+-> const age int = 12
+
+
+Note:
+-> Constant needs to be declared and initialised at the same time
+-> shorthand operator not supported for constant

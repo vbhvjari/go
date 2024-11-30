@@ -1,0 +1,123 @@
+Variables:
+- placeholder to store the data
+
+----------------------------------------------
+Declare variable
+- Go - static typed language
+- Variables are assigned a type - either explicitly or implicitly 
+
+Format-1: var <variable_name> <data_type>
+	  <variable_name> = <value>
+          
+
+Format-2: var <variable_name> <data_type> = <value>
+
+Examples:
+-> var s string = "Vaibhav"
+-> var n int = 5
+-> var f float64 = 57.75 
+-> var b bool = true 
+
+
+
+Shorthand way:
+Multiple variables of same type
+
+-> var s,t string = "Vaibhav", "Jariwala"
+
+Multiple variables of different types
+var (
+s string = "Vaibhav"
+num int = 5
+)
+
+
+Short variable Declaration
+-> looks like dynamic typed but Complier implicitly assign the type
+-> Format: <variable_name> := "value"
+Example: s string := "Vaibhav"
+
+
+
+----------------------------------------------
+Printing Variables
+
+var name string = "Vaibhav"
+fmt.Print("Name: ", name)
+
+
+--> Newline: \n
+
+Format specifiers: format value in --> preceded by %
+- %v	--> default format
+- %d	--> decimal integers
+- %f 	--> floating numbers
+- %.2f	--> floating numbers upto 2 decimal places
+- %s	--> Plain string
+- %c	--> character
+- %q	--> quoted character/string
+- %t	--> boolean - true or false
+- %T	--> type of the value
+
+
+----------------------------------------------
+Scope of Variable
+
+-> using block --> {}
+
+
+{
+// outer block
+  {
+    // inner block
+  }
+}
+
+- inner blocks can access variables declared within outer blocks
+- outer blocks cannot access variables declared within inner blocks
+
+
+-----------
+Local and Global variables 
+
+
+Local Variables:
+- Declared inside a function/block
+- Not accessible outside function/block
+- can also be declared inside looping and conditional statements
+
+
+Global Variables:
+- Declared outside of a function/block
+- declared at the tope of program - outside all functions/blocks
+- can be accessed from any part of the program
+- available throughout the lifetime of the program
+
+----------------------------------------------
+Zero values
+
+> just declare value and don't initialise it - variable with defined with default value or zero value
+
+Default or zero value
+
+- bool -> false
+- int -> 0
+- float -> 0.0
+- string -> ""
+- pointer/function/interface/map --> nil
+
+----------------------------------------------
+Type of variable --> using %T
+Type of variable or value --> using reflect.Typeof(value)
+
+----------------------------------------------
+Type Casting: Convert between data types - process of converting one datatype to another
+
+Integer to float --> float64(integer_value)
+Float to integer --> int(float_value)
+
+strconv package - string conversion package
+
+Integer to String --> Itoa() --> returns one value - output in string format
+String to Integer --> Atoi() --> returns two values - corresponding integer and error(if any)
+

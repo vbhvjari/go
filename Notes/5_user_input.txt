@@ -1,0 +1,8 @@
+User Input 
+-> Take input from user - mostly using "Scanf" function 
+
+Format: fmt.Scanf("%<format specifier> (s)", &object_argument)
+
+Return value of Scanf
+1) count --> number of arguments that function writes to
+2) err --> any error thrown during the exception of the function 

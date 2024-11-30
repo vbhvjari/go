@@ -1,0 +1,46 @@
+Why data types required
+- categorise set of related values
+- define the way the data is stored - Memory Allocation 
+- describe the operation that can be done on them
+
+
+
+String
+
+Number
+- integer	-> int - commonly used 
+- float		-> float32, float64
+
+Boolean
+- true
+- false
+
+
+Array - collection of same data type
+Slice - more flexible
+
+
+Maps - key-value pair
+----------------
+
+Integer
+
+int -> signed integer - supports both positive and negative both
+uint -> unsigned integer - supports only positive 
+
+----------------
+Float
+
+-> float32 - single precision - 32 bits or 4 bytes
+-> float64 - double precision - 64 bits or 8 bytes
+
+----------------
+String
+-> string - always surrounded by quotes (")
+- occupies 16 bytes of memory
+- Examples - "Vaibhav", "1.4", "5"
+
+----------------
+Boolean
+-> bool --> true or false (small letters)
+- occupies 1 byte of memory

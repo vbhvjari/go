@@ -1,0 +1,25 @@
+package --> Entry point of executable program
+
+> declared at the start of program
+
+
+Comment in go language 
+
+// this is single line comment
+
+
+
+/* 
+This is a
+Multi line
+Comment
+*/
+
+Import Package in go ~ Import module in Python
+Import package in go --> package name in double quote
+Example: import "fmt"
+
+Use function from the package: package_name.function_name
+Example: fmt.PrintIn("Hello World")
+
+Entry point of Go Program --> main function
