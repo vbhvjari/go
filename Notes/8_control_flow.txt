@@ -1,0 +1,63 @@
+Control execution flow of program using below:
+
+1) if-else and else if
+2) switch
+3) for loop
+
+
+1) if-else and else if
+
+Syntax:
+
+if condition {
+	// executes when condition is true
+}
+
+-----------------
+if condition {
+	// executes when condition is true
+} else {
+	// executes when condition is false
+}
+
+-----------------
+if condition_1 {
+	// executes when condition_1 is true
+} else if condition_2 {
+	// executes when condition_2 is true
+} else {
+	// executes when none of above conditions is true
+}
+-----------------
+2) switch-case
+
+switch expression {
+
+case value_1:
+	// execute when expression equals to value_1
+case value_2:
+	// execute when expression equals to value_2
+default:
+	// execute when no match is found
+
+}
+
+fallthrough -> force the execution flow to fall through the successive(next) case block
+-----------------
+for loop
+
+
+Loop - same operation multiple times
+
+
+for initialisation; condition; post {
+	// statements
+}
+
+Initialisation - optional
+Post - optional - executed AFTER each iteration of for loop
+
+
+
+Break		end the loop immediately 
+Continue	skips execution of current iteration and continues execution with the next iteration
