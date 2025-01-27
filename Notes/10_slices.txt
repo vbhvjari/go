@@ -1,0 +1,24 @@
+> Continuous segment of underline array
+> more flexible in size ==> variable typed - elements can be added or removed
+
+Components of slice:
+-> Pointer : first element of array --> not necessarily same as first element of array
+-> Length : no of elements it contains							==> len()
+-> Capacity: no of elements in underline array, counting from first element of slice	==> cap()
+
+
+Syntax:
+Declaration ==> <slice_name> := []<data_type>{<values>}
+Example ==> grades := []int{1, 2, 3}
+
+Slice :> array[start_index : end_index] 
+start_index included but end_index not included
+
+Declare and initialise using make:
+Syntax => slice := make([]<data_type>, length, capacity)
+
+-> Slice is reference of an array
+-> changing value of slice will change value of underlying array
+
+-> Append element of slice using append function
+-> append two slices using ...

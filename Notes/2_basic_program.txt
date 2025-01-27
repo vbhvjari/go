@@ -23,5 +23,3 @@ Use function from the package: package_name.function_name
 Example: fmt.PrintIn("Hello World")
 
 Entry point of Go Program --> main function
---------
-Run program locally: go run main.go

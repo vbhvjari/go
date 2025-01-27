@@ -1,0 +1,25 @@
+Arrays
+
+-> collection of similar data elements stored at contiguous memory locations
+-> fixed length -- once it is declared, its size cannot be changed
+-> mutable - value can be changed later
+-> length: no of elements in array
+-> capacity: no of elements it can contain
+-> length and capacity both same in Array
+
+
+Why do we need arrays
+-> need to store large amount of same type
+-> instead of creating different variables with same type, can create one variable and store values together
+
+Syntax:
+var <array_name> <array_size><data_type>
+
+-> Array elements are indexed and index starts with 0 and last element is length-1
+   0 <= index <= length-1
+
+Multidimensional array
+-> e.g. 2D - two dimensional element
+[x][y] --> x - size of array; y - size of elements in each 
+
+

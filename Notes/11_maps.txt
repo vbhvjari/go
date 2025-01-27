@@ -1,0 +1,23 @@
+Maps:
+-> unordered collection of key/value pairs
+-> implemented by hash tables
+-> provide efficient add, get and delete operations
+
+Syntax ==> var <map_name> map [<key_data_type>]<value_data_type>
+Example ==> var mymap map [string]int
+
+Shorthand ==> <map_name> := map[<key_data_type>]<value_data_type>{<key-value-pairs>}
+
+Using Make ==> <map_name> := make(map[<key_data_type>]<value_data_type>, <initial_capacity>)
+		initial_capacity is empty
+
+> Access map value using key : e.g. map[key]
+
+Assignment to entry in nil Map results in error
+E.g. below codes returns error:
+var mycodes map[string]int
+mycodes[A] = 5
+
+Correct way:
+var mycodes map[string]int{}
+mycodes[A] = 5
