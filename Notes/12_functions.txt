@@ -1,0 +1,105 @@
+Functions:
+-> Help us to divide a program into small manageable, repeatable and organisable chunks
+-> is also known as Method in Go
+
+Why do we use Functions:
+-> Reusabiliy
+-> Abstraction 
+
+Syntax: Function definition
+
+func <function_name> (<params>) <return_type> {
+   // body of the function
+}
+
+Return keyword : return
+
+Invoke function
+<function_name>(<arguments>)
+
+Naming convention for functions:
+-> must begin with a letter
+-> can have any number of additional letters and symbols 
+-> cannot contain spaces
+-> case-sensitive
+
+
+Parameters:
+-> Function parameters are the names listed in function's definition
+
+Arguments:
+-> Function arguments are the real values passed into the function
+
+-----------------------
+Return types of functions
+
+-> return value must match with function signature (return type in function declaration)
+-> can return multiple values using (return_type, return_type) in function delcaration
+e.g. for two return values
+func <function_name> (<params>) (<return_type>, <return_type>)  {
+   // body of the function
+}
+
+> Named return values
+Go allows to names to return as function parameters
+Useful when function returns many values
+
+
+> Variadic functions
+-> function that accepts variable number of arguments(when function is invoked) of same type
+-> possible to pass a varying number of arguments of the same type as referenced in function signature
+-> input parameters stored as slice
+
+Syntax ==> function <func_name>(param-1 type, param-2 type, param-3 ...type) <return-type>
+Variadic parameters should be at last
+
+e.g.
+func sumNumbers(number ...int) int
+func sumNumbers(str string, number ...int)
+
+Blank identifier(_) : used to ignore value returned by functon
+
+
+============================================================================================================
+Recursive functions
+
+-> Recursion : concept where a function calls itself by direct or indirect means
+-> The function keeps calling itself until it reaches a base case
+-> This is used to solve a problem where the solution is dependent on the smaller instance of the same problem
+
+
+============================================================================================================
+Anonymous function
+
+-> function that is declared without any named identifier to refer to it
+-> can accept inputs and return outputs just as standard functions
+-> can be used for containing functionality that need not be named and possibly for short-term use
+
+============================================================================================================
+High Order functions
+
+-> function that receives function as an argument or returns a function as output
+-> Need : composition, reduce bug, code easy to understand 
+
+============================================================================================================
+Defer statement
+
+-> delays the execution of a function until the surrounding function returns
+-> deferred call's arguments are evaluated immediately but the function call is not executed until the surrounding function returns
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
