@@ -26,7 +26,7 @@ Maps - key-value pair
 Integer
 
 int -> signed integer - supports both positive and negative both
-uint -> unsigned integer - supports only positive 
+uint -> unsigned integer - supports only positive
 
 ----------------
 Float

@@ -1,11 +1,10 @@
 Programming language - interact with computer
 
 
-Go or Golang Language 
+Go or Golang Language
 
 - created by Google
 - Previously source code used to deployed using C/C++ -- complexity
-- Go --> Ease of Programming , Interpreted language (e.g. Python)
 - efficient, support - network and multiple computing
 
 - compiled programming language
@@ -13,7 +12,7 @@ Go or Golang Language
 High level language - understood by humans - source code
 Machine level language - understood by machine - machine code
 
-Convert source code to machine code - using compiler or interpreter 
+Convert source code to machine code - using compiler or interpreter
 
 Compiler --> scan entire program and then translate whole source code into machine code
 Interpreter --> translate source code into machine code line by line
@@ -21,19 +20,26 @@ Interpreter --> translate source code into machine code line by line
 -----------
 Static/Strong typed language
 - Compiler throws an error when types are used incorrectly 
-- Type check occurs at compile time 
+- Type check occurs at compile time
+- variable is not allowed to change value at runtime
 - e.g. C, C++, Java
 
 Advantages:
-- Better performance 
+- Better performance
 - Bugs can be caught by Compiler
 - Better data integrity
 -----
 
-Dynamic/loosy types language 
+Dynamic/loosy types language
 - Compiler does not enforce the type system
 - Type check occurs at runtime
-- e.g. Python, Javascript, PHD
+- allowed to change value during runtime
+- e.g. Python, Javascript, PHP
 
 Advantages:
 - Faster to write code
+-----------
+
+Go Language
+- Static/Strong typed language
+- Compiled programming language

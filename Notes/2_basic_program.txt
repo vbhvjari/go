@@ -1,8 +1,26 @@
 package --> Entry point of executable program
 
+Package:
+- Pack/Group one or more source files in a single unit - package
+- Organize code into reusable modules
+- Any code written in Go must be part of a package
+- Package name is same as the directory name
+- Physically, a package is just a directory.
+- Naming Convention: directory names and the package names should be the same
+- Every runnable program must have at least one package called "main"
 > declared at the start of program
 
 
+Import Package in go ~ Import module in Python
+Import package in go --> package name in double quote
+Example: import "fmt"
+
+Use function from the package: package_name.function_name
+Example: fmt.PrintIn("Hello World")
+
+Entry point of Go Program --> main function
+
+-----------
 Comment in go language 
 
 // this is single line comment
@@ -14,12 +32,6 @@ This is a
 Multi line
 Comment
 */
-
-Import Package in go ~ Import module in Python
-Import package in go --> package name in double quote
-Example: import "fmt"
-
-Use function from the package: package_name.function_name
-Example: fmt.PrintIn("Hello World")
-
-Entry point of Go Program --> main function
+-----------
+Go Playground: https://go.dev/play/p/XOyKHCIwDw
+Go Tour: https://go.dev/tour/list

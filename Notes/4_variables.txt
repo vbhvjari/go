@@ -35,7 +35,7 @@ num int = 5
 Short variable Declaration
 -> looks like dynamic typed but Complier implicitly assign the type
 -> Format: <variable_name> := "value"
-Example: s string := "Vaibhav"
+Example: s := "Vaibhav"
 
 
 
@@ -50,13 +50,13 @@ fmt.Print("Name: ", name)
 
 Format specifiers: format value in --> preceded by %
 - %v	--> default format
-- %d	--> decimal integers
-- %f 	--> floating numbers
-- %.2f	--> floating numbers upto 2 decimal places
-- %s	--> Plain string
-- %c	--> character
-- %q	--> quoted character/string
-- %t	--> boolean - true or false
+- %d	--> decimal integers (int or uint type)
+- %f 	--> floating numbers (float32 type)
+- %.2f	--> floating numbers upto 2 decimal places (float64 type)
+- %s	--> Plain string (string type)
+- %c	--> character (string type)
+- %q	--> quoted character/string (string type)
+- %t	--> boolean - true or false (bool type)
 - %T	--> type of the value
 
 
