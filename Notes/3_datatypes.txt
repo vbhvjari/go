@@ -28,6 +28,13 @@ Integer
 int -> signed integer - supports both positive and negative both
 uint -> unsigned integer - supports only positive
 
+int8 - 8 bits or 1 byte
+int16 - 16 bits or 2 bytes
+int32 - 32 bits or 4 bytes
+int64 - 64 bits or 8 bytes
+int - either 32 bits or 64 bits based on the underlying architecture
+uint - either 32 bits or 64 bits based on the underlying architecture
+
 ----------------
 Float
 

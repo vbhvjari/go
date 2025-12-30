@@ -96,7 +96,7 @@ Global Variables:
 ----------------------------------------------
 Zero values
 
-> just declare value and don't initialise it - variable with defined with default value or zero value
+> just declare value and don't initialise it - variable are defined with default value or zero value
 
 Default or zero value
 

@@ -1,3 +1,12 @@
+/*
+
+Reading User Input in Go
+Package: fmt
+fmt.Scan():	Read space separated input from standard input	Ex: fmt.Scan(&var1, &var2)
+fmt.Scanln(): Read input from standard input until new line	Ex: fmt.Scanln(&var1)
+fmt.Scanf(): Read formatted input							Ex: fmt.Scanf("%d %s", &var1, &var2)
+*/
+
 package main
 
 import "fmt"

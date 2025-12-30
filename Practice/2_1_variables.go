@@ -35,8 +35,6 @@ func main() {
 	%T -> data type of the value
 	*/
 
-	// Short hand declaration
-
 	// Multiple variables of same type
 	var myname, surname string = "Vaibhav", "Jariwala"
 	fmt.Print("\n")
@@ -50,7 +48,7 @@ func main() {
 	fmt.Print("\n")
 	fmt.Printf("City: %s, Number: %d", s, in)
 
-	// short variable declaration
+	// Short variable declaration
 	city := "Surat"
 	fmt.Printf("\nCity: %s", city)
 

@@ -22,7 +22,7 @@ Static/Strong typed language
 - Compiler throws an error when types are used incorrectly 
 - Type check occurs at compile time
 - variable is not allowed to change value at runtime
-- e.g. C, C++, Java
+- e.g. C, C++, Java, Go
 
 Advantages:
 - Better performance
@@ -43,3 +43,11 @@ Advantages:
 Go Language
 - Static/Strong typed language
 - Compiled programming language
+
+-----------
+Learning Resources
+
+- Udemy Course: Learn the Go programming language with Hands-On labs
+  https://here.udemy.com/course/golang-for-beginners/learn/lecture/30695876
+- https://gobyexample.com/
+

@@ -2,6 +2,7 @@ package --> Entry point of executable program
 
 Package:
 - Pack/Group one or more source files in a single unit - package
+- logically group more than one source files
 - Organize code into reusable modules
 - Any code written in Go must be part of a package
 - Package name is same as the directory name
@@ -14,6 +15,12 @@ Package:
 Import Package in go ~ Import module in Python
 Import package in go --> package name in double quote
 Example: import "fmt"
+
+Import multiple packages in go
+import (
+    "fmt"
+    "unsafe"
+)
 
 Use function from the package: package_name.function_name
 Example: fmt.PrintIn("Hello World")

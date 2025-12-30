@@ -1,0 +1,223 @@
+Dependency Management
+
+- Specify exact version of package for your project
+
+
+
+go.mod
+- root of dependency management in Go
+- Specify exact version of module/package for your project
+- All modules which are required or to be used by the project are maintained in go.mod file
+- similar to Pipfile in Python
+- module : implies the url maintained for version control  - module declaration
+- go : go version
+- require : all modules with their version 
+- replace : points to local version of dependency in Go instead of git-web. 
+- //indirect : indicates that we are not using these dependencies inside project but there is some modules which imports these; all the transitive dependencies are indirect, these include dependencies which our project needs to work properly.
+
+- Update go.mod file using go get command - that is recommended instead of manually updating it.
+
+
+
+Install specific package(e.g. mongo-driver) : go get go.mongodb.org/mongo-driver
+
+-----------------
+go mod init
+- creates a new module, initialising go.mod file that describes the module
+
+
+-----------------
+go.sum
+- maintains checksum of packages - helps against unauthorised or unexpected modifications to the packages
+- It is auto generated file - similar to Pipfile.lock in Python
+- very important for package integrity	
+
+-----------------
+go mod tidy 
+- Ensures go.mod file matches source code in module
+- It added any missing module requirements necessary to build the current module's package & dependencies
+- It removes dependencies which are not used by project
+- It also adds any missing entires to go.sum file and removes unnecessary entries from go.sum file
+- When you upgrade version of specific package in go.mod, need to run command "go mod tidy" to update checksums in go.sum file
+
+-----------------
+go vendor
+- generates vendor directory with version available and copied all 3rd party dependencies to vendor folder in project root location.
+- Adds transitive dependencies required to run vendor package
+- If vending is enabled, Gi will load packages from vendor directory instead of downloading modules from sources into module cache and using packages those downloaded.
+
+-----------------
+go clean -modcache
+
+- go clean: clear mod cache which is stored at $GOPATH/pkg/mod
+- remove installed packages
+- parameter: -modcache - removes entire downloaded cache
+
+======================================
+
+Go Commands:
+
+go get 
+
+- add/update/remove package and dependencies 
+- updates go.mod and go.sum files to reflect new dependencies
+- syntax: go get <package-path>
+- example: go get gorm.io/gorm@v1.20.0
+
+---------
+go install
+
+- Build and install executables
+- syntax: go install <package-path>
+
+---------
+go mod init
+
+- Create and initialise new module
+- Creates go.mod file 
+- syntax: go mod init <package-path>
+
+---------
+go mod tidy
+
+- add missing and remove unused modules
+- 
+
+- Ensures go.mod file matches source code in module
+- It added any missing module requirements necessary to build the current module's package & dependencies
+- It removes dependencies which are not used by project
+- It also adds any missing entires to go.sum file and removes unnecessary entries from go.sum file
+- When you upgrade version of specific package in go.mod, need to run command "go mod tidy" to update checksums in go.sum file
+
+---------
+go list
+
+- list packages and modules contained in project
+
+https://www.freecodecamp.org/news/golang-environment-gopath-vs-go-mod/
+
+---------
+go mod verify
+
+- verifies integrity of packages and dependencies by comparing checksums in go.sum file
+
+---------
+
+
+
+
+References:
+
+- https://earthly.dev/blog/go-modules/
+- Makefile - https://earthly.dev/blog/golang-makefile/
+
+
+
+
+
+
+==================
+Packages and Modules
+
+Package:
+- group of one or more .go files
+- Purpose - isolate and reuse code
+- Name of package ~= name of directory
+- can import package in other package as well using import command
+- It's important to explain that code in a package can access and use all types, constants, variables and functions 
+within that package — even if they are declared in a different .go file.
+
+- main package: special package name which indicates that package contains code for an executable application that can be built into a binary and run
+- main package must contain main() function - acts as entry point of program
+- follow convention(NOT mandatory) - main() function in main.go file
+- Essentially, something in Go code is exported if its name starts with a capital letter. Otherwise it is unexported.
+e.g.
+
+var fooBaz string // This is an unexported variable.
+var FooBar string // This is an exported variable.
+
+- Unexported things are 'private' to the package that they are declared in. They are only visible to code in the same package. 
+- In contrast, exported things in a package are 'public' and are visible to any code that imports the package. 
+- Additionally, a main package should never normally be imported by anything, so it probably shouldn't have any exported things in it.
+
+
+Module
+
+- Group of packages 
+- set of packages - versioned and reusable
+- Create directory and execute "go mod init"
+
+- If you have a small application which only imports packages from the standard library, then what we've done so far works just fine. But if you want to import and use a third-party package — or structure your code so it's split into multiple packages — then you first need to turn your code into a Go module.
+
+
+import {module path}/{path to the package relative to your go.mod file}
+
+
+https://www.alexedwards.net/blog/an-introduction-to-packages-imports-and-modules
+
+
+
+Tapping meter - 30-40 - 1
+
+
+
+========
+go mod download
+
+- download all modules/dependencies listed in go.mod file to local Go module cache - ~/go/pkg/mod
+- just download, not build anything
+
+- useful
+ - pre-download dependencies before building to speed up builds
+ - avoid network issues during build step
+
+
+go get
+
+Modifies go.mod (updates/adds dependencies)
+
+Downloads dependencies
+
+Not recommended inside modules for building
+
+🔸 go mod tidy
+
+Adds missing modules
+
+Removes unused modules
+
+Downloads dependencies
+
+🔸 go build
+
+Downloads missing modules but only those needed for the build
+
+🔸 go mod download
+
+Downloads all modules listed in go.mod
+
+Does not modify any files
+
+Does not build code
+
+
+
+
+dpstratus-cloud-resource-tagger
+
+
+${ECR_ACCOUNT_NUMBER}.dkr.ecr.${PRIMARY_ECR_REGION}.amazonaws.com
+992382435622.dkr.ecr.eu-west-1.amazonaws.com/dp/stratus/prd/docker.io/golang
+
+
+$(shell go env GOPATH)/bin/staticcheck ./...
+
+
+arn:aws:iam::992516320172:role/VpcPeeringrole-DPAutomation
+
+
+
+svc-dpstratus in stratus account --> here-dpstratus-role in dp-secure --> Tenant managed AWS account 
+
+klog.V(2).Infof("Updated namespace cache: %s -> %s=%s", ns.Name, labelkey, odinID)
+

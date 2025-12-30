@@ -1,0 +1,12 @@
+Go 
+- Compiled programming language (Scan entire program first and then translate whole source code into machine code)
+- Static/Strong typed language (Type check occurs at compile time), Once type is assigned to variable, it cannot be changed during runtime
+- Error Detection - Caught by Compiler during compile time
+- Faster execution and better performance
+
+Python
+- Interpreted programming language (Translate source code into machine code line by line)
+- Strong typed - Type check occurs at runtime - Cannot mix incompatible types. e.g. cannot add string and integer("2" + 3)
+- Dynamic/loosy typed language - variable is allowed to change value during runtime
+- Error Detection - Caught by Interpreter during runtime
+- Slower execution compared to compiled languages
