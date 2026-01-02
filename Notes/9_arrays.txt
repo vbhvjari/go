@@ -13,13 +13,11 @@ Why do we need arrays
 -> instead of creating different variables with same type, can create one variable and store values together
 
 Syntax:
-var <array_name> <array_size><data_type>
-
+var <array_name> [<array_size>]<data_type>
+e.g., var fruits [5]string
 -> Array elements are indexed and index starts with 0 and last element is length-1
    0 <= index <= length-1
 
 Multidimensional array
 -> e.g. 2D - two dimensional element
 [x][y] --> x - size of array; y - size of elements in each 
-
-

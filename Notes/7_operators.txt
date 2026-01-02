@@ -28,13 +28,13 @@ Operations in Go language:
 2) Arithmetic Operators
 -> Arithmetic related operations between same type of operands
 -> Operators:
-	addition	+	Add value of two operands
-	subtraction	-	Subtract from left operand to right operand
+	addition		+	Add value of two operands
+	subtraction		-	Subtract from left operand to right operand
 	multiplication	*	Multiply left and right operands
-	division	/	Divide left operand by right operand
-	modules		%	returns remainder when left operand is divided by right operand
-	increment	++	unary operator - increment by 1
-	decrement	--	unary operator - decrement by 1
+	division		/	Divide left operand by right operand
+	modules			%	returns remainder when left operand is divided by right operand
+	increment		++	unary operator - increment by 1
+	decrement		--	unary operator - decrement by 1
 
 3) Logical Operators
 -> Determine the logic between variables or values
@@ -47,12 +47,12 @@ Operations in Go language:
 
 4) Assignment Operators
 -> Operators:
-	assign				=	Assigns left operand with value of the right
-	add and assign			+=	x+= y ==> x = x+y
-	subtract and assign		-=	x-= y ==> x = x-y
-	multiply and assign		*=	x*= y ==> x = x*y
-	divide and assign		/=	x/= y ==> x = x/y
-	divide and assign modules	%=	x%= y ==> x = x%y
+	assign						=		Assigns left operand with value of the right
+	add and assign				+=		x+= y ==> x = x+y
+	subtract and assign			-=		x-= y ==> x = x-y
+	multiply and assign			*=		x*= y ==> x = x*y
+	divide and assign			/=		x/= y ==> x = x/y
+	divide and assign modules	%=		x%= y ==> x = x%y
 
 5) Bitwise Operators
 -> works at bit level

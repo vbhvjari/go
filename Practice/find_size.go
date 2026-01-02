@@ -42,4 +42,9 @@ func main() {
 	fmt.Printf("\nThe length of string(number of elements) is %d", len(s))
 
 	fmt.Printf("\nType of s is %v", reflect.TypeOf(s))
+
+	var arr [3]int = [3]int{1, 2, 3}
+	fmt.Printf("\nLength - total number of elements of array arr is %v", len(arr))
+	fmt.Printf("\nTotal memory size of array arr is %v", unsafe.Sizeof(arr))
+
 }

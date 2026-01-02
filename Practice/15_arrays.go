@@ -4,26 +4,33 @@ import "fmt"
 
 func main() {
 	var grades [5]int
-	fmt.Printf("Grades: %d\n", grades)
+	fmt.Printf("Grades: %d\n", grades) // Zero value without array initialization
 
 	var fruits [3]string
-	fmt.Printf("Fruits: %s\n", fruits)
+	fmt.Printf("Fruits: %s\n", fruits) // Zero value without array initialization
 
 	var percentages [2]float64
-	fmt.Printf("Percentages: %f\n", percentages)
+	fmt.Printf("Percentages: %f\n", percentages) // Zero value without array initialization
 
 	var result [2]bool
-	fmt.Printf("Result: %t\n", result)
+	fmt.Printf("Result: %t\n", result) // Zero value without array initialization
 
 	// Array initialization
 	var marks [3]int = [3]int{1, 2, 3}
 	fmt.Printf("Marks: %d\n", marks)
 
-	// shoryhand
+	// Initialize with specific index
+	var a1 [3]int = [3]int{
+		0: 5,
+		1: 10,
+	}
+	fmt.Printf("\nArray a1: %v", a1)
+
+	// shorthand
 	num := [3]int{1, 2, 3}
 	fmt.Printf("Num: %d\n", num)
 
-	// Partial initialization
+	// Partial initialization - rest zero values are considered
 	numbers := [5]int{1, 2, 3}
 	fmt.Printf("Numbers: %d\n", numbers)
 

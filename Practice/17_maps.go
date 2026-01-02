@@ -3,6 +3,12 @@ package main
 import "fmt"
 
 func main() {
+
+	var m1 map[int]string
+	fmt.Printf("\nMap m1: %v", m1)
+	m1 = map[int]string{1: "english", 2: "hindi", 3: "marathi"}
+	fmt.Printf("\nMap m1: %v, its length: %v", m1, len(m1))
+
 	codes := map[string]string{"en": "English", "hin": "Hindi"}
 	fmt.Printf("Map codes: %s\n", codes)
 	fmt.Printf("Length of map: %d\n", len(codes))

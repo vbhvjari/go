@@ -5,6 +5,8 @@ Components of slice:
 -> Pointer : first element of array --> not necessarily same as first element of array
 -> Length : no of elements it contains							==> len()
 -> Capacity: no of elements in underline array, counting from first element of slice	==> cap()
+            How many elements it can grow to without reallocating
+            capacity = elements from slice start -> end of underlying array
 
 
 Syntax:
