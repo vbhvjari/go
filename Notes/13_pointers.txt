@@ -1,0 +1,33 @@
+Pointers
+
+- Memory management - RAM 
+- whenever any variable is declared, certain amount of memory is allocated to store that variable - size of memory depends on data type of variable
+- Pointer 
+    - variable that holds the memory address of another variable
+    - points where memory is allocated and provides way to find or even change the value located at memory location.
+
+- address operator - &
+  address of variable can be obtained by preceding name of variable with &
+
+- dereference operator - *
+  When placed before an address, it returns the value stored at that address
+
+Declare pointer
+var <pointer_name> *<data_type> => data type of varaible whose address we want to save in another variable(which is pointer)
+The * in pointer declaration is different from deference operator
+
+zero value of pointer : nil
+
+Initialise pointer
+
+# With explicit data_type
+var <pointer_name> *<data_type> = &<variable_name>
+
+# Without data_type
+var <pointer_name> = &<variable_name>
+
+# Shorthand
+<pointer_name> := &<variable_name>
+
+Deference pointer  -> *<pointer_name>
+

@@ -87,19 +87,15 @@ Defer statement
 -> delays the execution of a function until the surrounding function returns
 -> deferred call's arguments are evaluated immediately but the function call is not executed until the surrounding function returns
 
+============================================================================================================
+Passing by value in function
+- Function is called by directly passing the value of variable as an argument
+- parameter(function declaration) is copied into another location of your memory
+- when accessing/modifying variable within function, only copy is accessed/modified and original value is never modified
+- All basic types - int, float, bool, string, array - passed by value
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Passing by reference in function
+- Pointer - allows to pass reference to values within program
+- Call function by reference/pointer - address of variable is passed into function call as actual parameter
+- All operations in function are performed on the value stored at the address of actual parameters
+- Slice and Map types are passed by reference by default
