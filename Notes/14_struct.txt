@@ -1,0 +1,32 @@
+Struct
+
+- user defined data type
+- structure that groups together related data to form a single unit
+- provides a way to reference series of grouped values through a single variable name
+- used to group/associate two or more data types
+
+declaration
+type <struct_name> struct {
+
+}
+
+Initialization
+
+Method-1:
+var <variable_name> <struct_name>
+- Creates instance of struct with zero values
+
+Method-2:
+<variable_name> := new(struct_name)
+
+Method-3: Shorthand
+<variable_name> := <struct_name>{
+    <field1>: <value1>,
+    <field2>: <value2>,
+}
+
+Access fields of Struct
+<variable_name>.<field_name>
+
+Comparing two instances of same struct
+- structs of same type can be compared using equality operators (== or !=)
