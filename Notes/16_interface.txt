@@ -1,0 +1,48 @@
+Interfaces
+
+- specifies set of methods
+- like blueprint for method sets
+- allows modualar programming
+- describe all methods of method set by providing functon signature for each method
+- specify set of methods, but do not implement them
+
+Syntax:
+type <interface_name> interface {
+    method1_name(parameter_list) (return_types)
+    method2_name(parameter_list) (return_types)
+    ...
+}
+
+Interface in Golang are implemented implicitly and it doesn't require any explicit declaration.
+
+
+If you do these actions, I don't care what you are.
+Example: USB port - It only cares - you can send/receive data ; doesn't care if you plug keyboard, mouse, pendrive
+
+Inferface in Golang
+- set of method signatures
+- defines what type can do, not what it is
+- is about behaviour, not structure
+
+Declaration:
+type <interface_name> interface {
+    method-signatures
+}
+
+Example:
+type Speaker interface {
+    speak()
+}
+This means, any type that has speak() method, is a Speaker
+
+Implementation:
+- No explicit Implementation; it's implicit by Golang
+
+- Internally, interface stores {type, value}
+
+
+simple analogy terms:
+
+Struct -> data
+Method -> ability
+Interface -> contract

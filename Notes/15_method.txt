@@ -1,0 +1,32 @@
+Method
+
+- A method augments a function by adding an extra parameter immediately after "func" keyword that accepts  a single argument
+- This augment - receiver
+- Method is a function with a special receiver argument
+
+Syntax:
+func (receiver_name receiver_type) method_name(parameters) (return_types) {
+    // method body
+}
+- receiver_name - name of the variable that represents the instance of the type on which method is called
+- receiver_type - type of the receiver (can be struct, int, float, etc)
+- method_name - name of the method
+- parameters - input parameters (optional)
+- return_types - return types (optional)    
+
+
+limitation of function
+- two functions with same name cannot exist in same package
+
+Method
+- a function that is attached to a specific receiver(type) argument
+- defines behaviour of type 
+- should use state of the type
+- output of method is dependant on the type of receiver
+- different methods with same name(with different receiver) can exist
+- Method belongs to type
+
+To define a method on a type, the definition of the receiver type and the definition of the method should be present in the same package.
+
+References:
+- https://golangbot.com/methods/

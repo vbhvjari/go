@@ -1,0 +1,16 @@
+Struct - what it is
+Method - what it can do
+Interface - what is expected
+
+Data   -> Action -> Rule
+Srtuct -> Method -> Interface
+
+Struct - holds data - what information do I have
+example - Student ID card - it holds information - name, roll no, grade
+
+Method - actions related to data - what can I do 
+example - speak english, write emails 
+
+Interface - rule/expectation - what should be possible
+example - must speak english, must write emails 
+          (It doesn't care whether you are student/teacher; it only cares if you can speak engilish, can write emails)
