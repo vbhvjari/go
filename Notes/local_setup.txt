@@ -1,0 +1,6 @@
+Create module at /Users/jariwala/repos/testing/go
+Let's say module name is parse
+- create a directory -> mkdir parse
+- Navigate into the directory -> cd parse
+- Initialize a new Go module -> go mod init parse
+- Get packages -> go get github.com/hashicorp/go-envparse
